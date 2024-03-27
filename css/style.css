@@ -1,0 +1,17 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #080B11;
+}
+
+#nav a {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  color: #ffffff;
+  font-size: 16px;
+}
+#nav #botaodecima {
+  color: #ffffff;
+  background-color: #FFB72D;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
