@@ -33,9 +33,13 @@ body {
   color: #ffffff;
   text-decoration: none;
   flex-grow: 1;
+  font-size: 16px;
 }
 #nav a img {
   width: 50px;
+}
+#nav a:hover {
+  color: #FFB72D;
 }
 #nav .feature-link {
   text-align: end;
@@ -60,6 +64,9 @@ body {
   font-weight: bold;
   font-weight: bold;
   text-decoration: none;
+}
+#nav #botaodecima:hover {
+  background-color: #FEF6F0;
 }
 
 h1 {
@@ -114,19 +121,22 @@ div {
   height: 58px;
   font-size: 16px;
   border: 1px solid #7D7D7D; /* Utiliza a variável para a cor da borda */
-  text-align: center; /* Alinhar o texto ao centro */
+  text-align: left 30px; /* Alinhar o texto ao centro */
   padding: 0; /* Remover todo o preenchimento interno */
   margin: 0; /* Remover margens */
   background: none; /* Remover fundo */
   outline: none; /* Remover contorno ao focar */
   box-shadow: none; /* Remover sombra */
   border-radius: 100px;
+  color: #ffffff;
+  caret-color: #ffffff;
+  padding: 0 20px;
 }
 
 #Emailusuario input[type=text]::placeholder {
   font-size: 16px;
   text-align: left;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 #Emailusuario button {
@@ -138,6 +148,10 @@ div {
   border: none;
   font-weight: bold;
   cursor: pointer;
+}
+
+#Emailusuario button:hover {
+  background-color: #FEF6F0;
 }
 
 .container {
