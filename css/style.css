@@ -1,17 +1,223 @@
+@charset "UTF-8";
 body {
   font-family: "Rubik", sans-serif;
   background-color: #080B11;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
 }
 
-#nav a {
-  list-style: none;
-  text-decoration: none;
+#nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+#nav h1 {
+  flex: 1;
+  margin-right: 64px;
+}
+#nav #nav img {
+  order: 1; /* Define a ordem da imagem como primeiro item */
+}
+#nav #nav button {
+  order: 3; /* Define a ordem do botão como terceiro item */
+}
+#nav #nav .links {
+  order: 2; /* Define a ordem dos links como segundo item */
+  display: flex;
+  gap: 64px; /* Espaçamento de 64px entre os links */
+  justify-content: center; /* Centraliza os links horizontalmente */
+}
+#nav a {
   color: #ffffff;
-  font-size: 16px;
+  text-decoration: none;
+  flex-grow: 1;
+}
+#nav a img {
+  width: 50px;
+}
+#nav .feature-link {
+  text-align: end;
+  margin-right: 30px;
+}
+#nav #links {
+  display: contents;
 }
 #nav #botaodecima {
-  color: #ffffff;
+  background-color: #FFB72D;
+  margin-left: auto;
+  color: #1E1E1E;
+  width: 176px;
+  height: 43px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 64px;
+  text-align: center;
+  color: #FFB72D;
+  margin-top: 127px;
+}
+
+#features {
+  display: flex;
+  margin-top: 42px;
+  justify-content: center;
+  gap: 76px;
+}
+
+#features a {
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: #7D7D7D; /* Herda a cor do pai (geralmente preto) */
+  pointer-events: none; /* Desabilita o clique */
+  margin-right: 4px; /* Espaçamento entre os links */
+  display: flex; /* Para os itens dentro do link também ficarem em linha */
+  align-items: center; /* Alinha os itens verticalmente */
+}
+
+#features a img {
+  margin-right: 4px; /* Espaçamento entre a imagem e o texto */
+  width: auto; /* Para garantir que a largura da imagem seja ajustada automaticamente */
+  height: 20px; /* Ajuste a altura da imagem conforme necessário */
+  float: left; /* Faz com que a imagem flutue à esquerda */
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Emailusuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#Emailusuario > * {
+  margin: 0 15px; /* Espaçamento entre elementos */
+}
+
+#Emailusuario input[type=text] {
+  width: 384px;
+  height: 58px;
+  font-size: 16px;
+  border: 1px solid #7D7D7D; /* Utiliza a variável para a cor da borda */
+  text-align: center; /* Alinhar o texto ao centro */
+  padding: 0; /* Remover todo o preenchimento interno */
+  margin: 0; /* Remover margens */
+  background: none; /* Remover fundo */
+  outline: none; /* Remover contorno ao focar */
+  box-shadow: none; /* Remover sombra */
+  border-radius: 100px;
+}
+
+#Emailusuario input[type=text]::placeholder {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+#Emailusuario button {
+  width: 178px;
+  height: 58px;
+  border-radius: 100px;
+  font-size: 16px;
   background-color: #FFB72D;
   border: none;
-}/*# sourceMappingURL=style.css.map */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.image-and-cards {
+  display: flex;
+  align-items: flex-start;
+  margin: 100px;
+}
+
+/* Estilo para a imagem */
+.image-and-cards img {
+  width: 640px;
+  height: 600px;
+  margin-right: 44px;
+}
+
+/* Estilo para os cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 300px); /* Define duas colunas com largura de 265px */
+  grid-template-rows: repeat(2, auto); /* Define duas linhas com altura automática */
+  gap: 44px 42px; /* Espaçamento entre os cards */
+}
+
+.image-container {
+  width: 265px;
+  flex-direction: column;
+  height: 268px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Cor de fundo do card */
+  padding: 20px; /* Adiciona espaçamento interno ao card */
+  align-items: flex-start;
+}
+
+.image-container img {
+  width: 24px;
+  height: 24px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-self: start; /* Alinha a imagem à esquerda dentro do card */
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: medium;
+  color: #5E4E41;
+}
+
+p {
+  font-size: 16px;
+  color: #B1957E;
+}
+
+.image-container h2,
+.image-container p {
+  text-align: left;
+}
+
+/* Espaçamento horizontal entre os cards */
+.image-container:not(:last-child) {
+  margin-right: 42px;
+}
+
+hr {
+  width: 1217px;
+  margin-top: 100px;
+  border: none;
+  border-top: 1px solid #7D7D7D;
+}
+
+#footer {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
