@@ -234,4 +234,52 @@ hr {
   margin-bottom: 60px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*Responsividade para tablet*/
+@media only screen and (min-width: 1920px) and (min-height: 1869px) {
+  .container {
+    display: flex;
+    margin-left: 352px;
+    margin-right: 352px;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 64px;
+    text-align: center;
+    color: #FFB72D;
+    margin-top: 211px;
+    margin-left: 537px;
+    margin-right: 538px;
+  }
+  #features {
+    display: flex;
+    margin-left: 726px;
+    margin-right: 755px;
+    justify-content: center;
+    gap: 76px;
+  }
+  #nav #botaodecima {
+    margin-right: 250px;
+  }
+}
+/*Responsividade para */
+@media only screen and (max-width: 390px) and (min-height: 2551px) {
+  .waitlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  #Emailusuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Emailusuario input[type=text] {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  #Emailusuario button {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
